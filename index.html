@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ivan Scarpato — Motorsport Photography</title>
+	
+	<!-- Modern Fonts Import -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,ital,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+
+	<style>
+		:root { 
+			--ink: #191918; 
+			--muted: #6e6b66; 
+			--paper: #f8f7f5; 
+		}
+		* { box-sizing: border-box; }
+		body { 
+			margin: 0; 
+			color: var(--ink); 
+			background: var(--paper); 
+			font-family: 'Inter', -apple-system, sans-serif; 
+			-webkit-font-smoothing: antialiased;
+		}
+		header { 
+			display: flex; 
+			justify-content: space-between; 
+			align-items: flex-end; 
+			padding: 48px 6vw 24px; 
+			border-bottom: 1px solid #e2ded7; 
+		}
+		h1 { 
+			margin: 0; 
+			font-family: 'Newsreader', Georgia, serif; 
+			font-size: clamp(2.4rem, 6vw, 5rem); 
+			font-weight: 400;
+			letter-spacing: -.03em; 
+			line-height: 0.95;
+		}
+		header p { 
+			margin: 0; 
+			color: var(--muted); 
+			font-size: .75rem; 
+			font-weight: 600;
+			letter-spacing: .15em; 
+			text-transform: uppercase; 
+		}
+		main { padding: 4vw 6vw 6vw; }
+		.intro { 
+			max-width: 580px; 
+			margin-bottom: 48px; 
+			color: var(--muted); 
+			font-size: 1.05rem;
+			line-height: 1.6; 
+		}
+		.gallery { columns: 3 280px; column-gap: 20px; }
+		figure { 
+			margin: 0 0 20px; 
+			break-inside: avoid; 
+			position: relative; 
+			overflow: hidden; 
+			background: #e6e3dd; 
+			border-radius: 2px;
+		}
+		figure img { 
+			display: block; 
+			width: 100%; 
+			height: auto; 
+			min-height: 150px; 
+			object-fit: cover; 
+			transition: transform .6s cubic-bezier(0.16, 1, 0.3, 1); 
+		}
+		figure:hover img { transform: scale(1.03); }
+		figcaption { 
+			position: absolute; 
+			bottom: 0; 
+			width: 100%; 
+			padding: 32px 16px 14px; 
+			color: #fff; 
+			font-size: .75rem; 
+			font-weight: 500;
+			letter-spacing: .05em;
+			background: linear-gradient(transparent, rgba(0,0,0,0.75)); 
+			opacity: 0; 
+			transition: opacity .3s ease; 
+		}
+		figure:hover figcaption { opacity: 1; }
+		footer { 
+			display: flex;
+			justify-content: space-between;
+			padding: 28px 6vw; 
+			color: var(--muted); 
+			border-top: 1px solid #e2ded7; 
+			font-size: .8rem; 
+		}
+		@media (max-width: 600px) { 
+			header { display: block; } 
+			header p { margin-top: 12px; } 
+			.gallery { columns: 2 140px; column-gap: 12px; } 
+			figure { margin-bottom: 12px; } 
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Ivan Scarpato</h1>
+		<p>Motorsport Photography · 2026</p>
+	</header>
+	<main>
+		<p class="intro">Speed, kerbs, and paddock details. A curated visual selection spanning trackside action and pit lane moments.</p>
+		<section class="gallery" aria-label="Photo gallery">
+			<figure><img src="img/1.jpg" alt="Ferrari 499P #51 hypercar on track at Imola Circuit" loading="lazy"><figcaption>Imola · Ferrari 499P #51</figcaption></figure>
+			<figure><img src="img/2.jpg" alt="Porsche 911 GT3 Cup #22 high-speed motion blur panning shot on straight" loading="lazy"><figcaption>Imola · Porsche 911 GT3 Cup Panning</figcaption></figure>
+			<figure><img src="img/3.jpg" alt="Ferrari 296 Challenge cornering aggressively at Imola" loading="lazy"><figcaption>Imola · Ferrari 296 Challenge</figcaption></figure>
+			<figure><img src="img/4.jpg" alt="Ferrari 296 Challenge cars chasing each other at Imola Circuit" loading="lazy"><figcaption>Imola · Ferrari Challenge Battle</figcaption></figure>
+			<figure><img src="img/5.jpg" alt="Ferrari 296 Challenge negotiating a corner at Imola" loading="lazy"><figcaption>Imola · Ferrari 296 Challenge</figcaption></figure>
+			<figure><img src="img/6.jpg" alt="Overview of the Imola pit lane with race cars lined up in front of garages" loading="lazy"><figcaption>Imola · Pit Lane Overview</figcaption></figure>
+			<figure><img src="img/7.jpg" alt="Lamborghini Super Trofeo #117 driver swap and pit stop action in pit garage" loading="lazy"><figcaption>Pit Stop · Lamborghini Super Trofeo #117</figcaption></figure>
+			<figure><img src="img/8.jpg" alt="Track marshal waving yellow flag at marshal post in Imola" loading="lazy"><figcaption>Imola · Track Marshal & Yellow Flag</figcaption></figure>
+			<figure><img src="img/9.jpg" alt="Cupra Leon TCR exiting pit lane onto track at Imola" loading="lazy"><figcaption>Imola · Cupra Leon TCR Exit</figcaption></figure>
+			<figure><img src="img/10.jpg" alt="Audi RS3 LMS TCR #8 speeding down the main straight at Imola" loading="lazy"><figcaption>Imola · Audi RS3 LMS TCR #8</figcaption></figure>
+			<figure><img src="img/11.jpg" alt="BMW M4 GT3 #7 cornering at Autodromo di Imola" loading="lazy"><figcaption>Imola · BMW M4 GT3 #7</figcaption></figure>
+			<figure><img src="img/12.jpg" alt="Panning shot of Lamborghini Huracán Super Trofeo EVO2 #8" loading="lazy"><figcaption>Imola · Lamborghini Super Trofeo #8</figcaption></figure>
+			<figure><img src="img/13.jpg" alt="Lamborghini SC12 #6 riding over the kerbs at Imola" loading="lazy"><figcaption>Imola · Lamborghini SC12 #6</figcaption></figure>
+			<figure><img src="img/14.jpg" alt="Blue Lamborghini Temerario on track during track day at Imola" loading="lazy"><figcaption>Imola · Lamborghini Temerario</figcaption></figure>
+			<figure><img src="img/15.jpg" alt="Lamborghini Aventador SVJ 63 and Countach LPI 800-4 side-by-side at Imola" loading="lazy"><figcaption>Imola · Lamborghini SVJ 63 & Countach</figcaption></figure>
+			<figure><img src="img/16.jpg" alt="Green Lamborghini Temerario Super Trofeo #63 panning shot at Imola" loading="lazy"><figcaption>Imola · Lamborghini Temerario Super Trofeo #63</figcaption></figure>
+			<figure><img src="img/17.jpg" alt="Rear detail of rain-covered Lamborghini Revuelto in Imola paddock" loading="lazy"><figcaption>Imola · Lamborghini Revuelto Rain Detail</figcaption></figure>
+			<figure><img src="img/18.jpg" alt="McLaren hypercar prototype testing at Imola Circuit" loading="lazy"><figcaption>Imola · McLaren Hypercar Prototype</figcaption></figure>
+			<figure><img src="img/19.jpg" alt="McLaren hypercar prototype exiting Acque Minerali turn at Imola" loading="lazy"><figcaption>Imola · McLaren Prototype Turn Exit</figcaption></figure>
+			<figure><img src="img/20.jpg" alt="Framed panning shot of McLaren prototype through debris fence" loading="lazy"><figcaption>Imola · McLaren Panning Through Fence</figcaption></figure>
+			<figure><img src="img/21.jpg" alt="High angle view of Italian F4 single-seaters procession on Imola track" loading="lazy"><figcaption>Imola · Italian F4 Championship Pack</figcaption></figure>
+			<figure><img src="img/22.jpg" alt="Lineup of Ducati Panigale V4 S bikes on grid at Misano World Circuit" loading="lazy"><figcaption>Misano · Ducati Panigale V4 S Lineup</figcaption></figure>
+			<figure><img src="img/23.jpg" alt="Front view of Yari Montella's Barni Spark Racing Team Ducati Panigale V4 S" loading="lazy"><figcaption>Misano · Ducati Panigale V4 S #5</figcaption></figure>
+			<figure><img src="img/24.jpg" alt="Trident Motorsport mechanics working on single-seater on starting grid" loading="lazy"><figcaption>Imola · Trident Motorsport Grid Setup</figcaption></figure>
+			<figure><img src="img/25.jpg" alt="PREMA Racing engineers and mechanics working on the starting grid at Imola" loading="lazy"><figcaption>Imola · PREMA Racing Grid Prep</figcaption></figure>
+			<figure><img src="img/26.jpg" alt="Italian F4 Championship podium ceremony at Imola" loading="lazy"><figcaption>Imola · Italian F4 Podium Ceremony</figcaption></figure>
+			<figure><img src="img/27.jpg" alt="Audi R8 LMS GT3 EVO II cornering over the kerbs at Imola" loading="lazy"><figcaption>Imola · Audi R8 LMS GT3 #99</figcaption></figure>
+			<figure><img src="img/28.jpg" alt="Audi R8 LMS GT3 EVO II leading a Ferrari 296 GT3 through the Acque Minerali at Imola" loading="lazy"><figcaption>Imola · Audi R8 LMS GT3 #22 & Ferrari 296 GT3 #231</figcaption></figure>
+			<figure><img src="img/29.jpg" alt="FRECA car spinning out into the gravel trap at Imola" loading="lazy"><figcaption>Imola · FRECA Gravel Off-Track</figcaption></figure>
+			<figure><img src="img/30.jpg" alt="High angle shot of pit lane preparations at Imola" loading="lazy"><figcaption>Imola · Pit Lane Action</figcaption></figure>
+			<figure><img src="img/31.jpg" alt="Track marshals in high-visibility gear standing by post 11 along the Imola pit wall" loading="lazy"><figcaption>Imola · Track Marshals</figcaption></figure>
+			<figure><img src="img/32.jpg" alt="Ferrari 296 GT3 #51 clipping the kerb at Imola circuit" loading="lazy"><figcaption>Imola · Ferrari 296 GT3 #51</figcaption></figure>
+			<figure><img src="img/33.jpg" alt="Porsche 911 GT3 Cup #533 approaching Acque Minerali 2 at Imola" loading="lazy"><figcaption>Imola · Porsche 911 GT3 Cup #533</figcaption></figure>
+			<figure><img src="img/34.jpg" alt="Ferrari GT car #83 parked outside pit garages behind an Imola sign and vintage bicycle" loading="lazy"><figcaption>Imola · Paddock Life & Ferrari #83</figcaption></figure>
+			<figure><img src="img/35.jpg" alt="Aston Martin Driver Development Programme FRECA car #28 speeding down the pit straight at Imola" loading="lazy"><figcaption>Imola · FRECA Aston Martin Livery #28</figcaption></figure>
+			<figure><img src="img/36.jpg" alt="AKM Motorsport mechanics making last-minute grid adjustments to single-seater #20 at Imola" loading="lazy"><figcaption>Imola · AKM Motorsport Grid Servicing #20</figcaption></figure>
+		</section>
+	</main>
+	<footer>
+		<span>© 2026 Ivan Scarpato</span>
+		<span>All rights reserved</span>
+	</footer>
+	<script>
+		document.querySelectorAll('img').forEach(img => img.addEventListener('error', () => img.closest('figure').remove()));
+	</script>
+</body>
+</html>
