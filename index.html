@@ -246,6 +246,37 @@
 			.gallery { columns: 1; column-gap: 0px; } 
 			figure { margin-bottom: 24px; } 
 		}
+
+		.print-contact-info {
+  			display: none;
+		}
+
+		@media print {
+  			/* Nascondi il menu <details> durante la stampa */
+  			details.social-menu {
+    			display: none !important;
+  		}
+
+  			/* Mostra i link di contatto stampabili con lo stesso font e stile del menu */
+  		.print-contact-info {
+    		display: block !important;
+    		font-family: 'Inter', -apple-system, sans-serif;
+    		font-size: .72rem;
+    		font-weight: 600;
+    		letter-spacing: .14em;
+    		text-transform: uppercase;
+    		margin-top: 12px;
+  		}
+
+  		.print-contact-info p {
+    		margin: 0 0 8px 0;
+  		}
+
+  		.print-contact-info a {
+    		color: var(--ink);
+    		text-decoration: none;
+  		}
+	}
 	</style>
 </head>
 <body>
@@ -261,6 +292,10 @@
 				<a href="mailto:scarpatoivanalbino@gmail.com">Email me</a>
 			</nav>
 		</details>
+		<div class="print-contact-info">
+  			<p>Web page: <a href="https://ivan-scarpato.pages.dev/">https://ivan-scarpato.pages.dev/</a></p>
+  			<p>Instagram: <a href="https://www.instagram.com/scarpets.png/">@scarpets.png</a></p>
+		</div>
 	</header>
 	<main>
 		<section class="intro" aria-label="About Ivan Scarpato">
@@ -318,7 +353,7 @@
 			<figure><img src="img/48.jpg" alt="Vista laterale con panning della Scuderia Ferrari SF-24 di Formula 1 in piega sulla corda all'Autodromo di Imola" loading="lazy"><figcaption>Imola · Scuderia Ferrari SF-24 Side Profile</figcaption></figure>
 			<figure><img src="img/49.jpg" alt="Vista laterale con panning della monoposto Scuderia Ferrari Formula 1 numero 39 in sfrecciata sul tracciato di Imola" loading="lazy"><figcaption>Imola · Scuderia Ferrari F1 #39 Panning</figcaption></figure>
 			<figure><img src="img/50.jpg" alt="Monoposto di Formula 1 classica Ferrari numero 27 in curva sul tracciato di Imola" loading="lazy"><figcaption>Imola · Ferrari F1 Classica #27</figcaption></figure>
-			
+
 		</section>
 	</main>
 	<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded photo">
